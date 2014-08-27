@@ -1,15 +1,29 @@
 {
-    "name": "zendframework/skeleton-application",
-    "description": "Skeleton Application for ZF2",
-    "license": "BSD-3-Clause",
+    "name": "facebook/facebook-sdk-php-zf2",
+    "description": "Zend Framework 2 Module that allows easy integration the Facebook SDK for PHP",
+    "type": "library",
+    "license": "Apache",
     "keywords": [
-        "framework",
-        "zf2"
+        "facebook",
+        "zf2",
+        "module",
+        "sdk"
     ],
-    "homepage": "http://framework.zend.com/",
+    "homepage": "https://github.com/Vibre/facebook",
     "require": {
         "php": ">=5.4",
         "zendframework/zendframework": "2.3.*",
         "facebook/php-sdk": "3.2.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*",
+    },
+    "autoload": {
+        "psr-0": {
+            "Facebook\\": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
     }
 }
